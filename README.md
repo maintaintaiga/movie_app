@@ -9,7 +9,7 @@ npm run dev
 
 _navigate to http://localhost:3000_
 
-/////////////////////////////////////////////////////
+---
 
 ## To build for production
 
@@ -17,6 +17,8 @@ _navigate to http://localhost:3000_
 npm i --production
 npm run build
 ```
+
+---
 
 ## Deploy on a server
 
