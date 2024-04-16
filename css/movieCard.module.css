@@ -1,0 +1,136 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-7);
+  justify-content: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  justify-content: flex-start;
+}
+
+@media (max-width: 960px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    grid-template-columns: auto auto;
+  }
+}
+
+.overview {
+  opacity: 0.5;
+  margin: 0;
+}
+
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.overviewText {
+  font-size: 20px;
+  font-style: italic;
+  margin: 0;
+}
+
+.metaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0px 16px 0px;
+  gap: var(--spacing-4);
+  border: 1px 0px 1px 0px;
+  align-items: center;
+}
+
+.infoContainer {
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+}
+
+.genreContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  align-items: center;
+}
+
+.genre {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.crewItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.jobTitle {
+  opacity: 0.5;
+  min-width: 150px;
+  height: 12px;
+}
+
+.memberTitle {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.chip {
+  padding: 4px 12px 4px 12px;
+  border-radius: 24px;
+  border: 1px solid var(--azure-blue-50);
+}
+
+.imageContainer {
+  justify-self: center;
+}
+
+.image {
+  border: 1px solid;
+  border-color: var(--night-40);
+  box-shadow: 0px 0px 12px 0px #00000099;
+}
+
+.ratingContainer {
+  background-color: var(--night-40);
+  border-radius: 4px;
+  padding: 4px 8px 4px 8px;
+}
+
+.rating {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .image {
+    width: 300px;
+    height: 450px;
+  }
+  .imageContainer {
+    justify-self: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .image {
+    width: 400px;
+    height: 600px;
+  }
+  .imageContainer {
+    justify-self: flex-start;
+  }
+}

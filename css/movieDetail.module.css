@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-6);
+  padding: var(--spacing-12) var(--spacing-7) var(--spacing-12) var(--spacing-7);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 48px 32px 48px 32px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    padding: 48px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 48px 96px 48px 96px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.buttonText {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+p .movieDetail {
+  color: #fff;
+}
