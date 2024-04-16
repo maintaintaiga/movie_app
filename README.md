@@ -1,24 +1,24 @@
-#Movie App Project
+# Movie App Project
 
-##To run on development
+## To run on development
 
 ```bash
 npm ci
 npm run dev
 ```
 
-navigate to http://localhost:3000
+_navigate to http://localhost:3000_
 
 /////////////////////////////////////////////////////
 
-##To build for production
+## To build for production
 
 ```bash
 npm i --production
 npm run build
 ```
 
-##Deploy on a server
+## Deploy on a server
 
 - Zip project, excluding .vscode, .next, node_modules and .env
 - Transfer zip file to server, i.e. filezilla
