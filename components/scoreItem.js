@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import styles from "@/css/movieItem.module.css";
+import styles from "@/css/scoreItem.module.css";
 import { getVote } from "@/utils/getVotePercentage";
 
 export default function ScoreItem({ score, isLarge }) {

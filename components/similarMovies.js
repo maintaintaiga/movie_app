@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 
 import styles from "../css/similarMovies.module.css";
-import MovieItem from "./movieItem";
 import { getSimilarMovies } from "@/app/data/data";
 import tmdbLoader from "@/app/tmdb-image-loader";
 import Image from "next/image";
+import ScoreItem from "./scoreItem";
 
 export default function SimilarMovies({ id, genre }) {
   const [movies, setMovies] = useState([]);
@@ -29,15 +29,19 @@ export default function SimilarMovies({ id, genre }) {
       <div className={styles.scrollContainer}>
         {movies != null && movies.length > 0
           ? movies.map((movie) => (
-              <Image
-                key={movie.id}
-                src={movie.poster_path}
-                loader={tmdbLoader}
-                height={270}
-                width={180}
-                alt="Click to see detail"
-                className={styles.image}
-              />
+              <div style={{ minWidth: 180 }}>
+                <Image
+                  key={movie.id}
+                  src={movie.poster_path}
+                  loader={tmdbLoader}
+                  height={270}
+                  width={180}
+                  alt="Click to see detail"
+                  className={styles.image}
+                />
+                <h2>{movie.title}</h2>
+                <ScoreItem score={movie.vote_average} isLarge />
+              </div>
             ))
           : null}
       </div>

@@ -7,25 +7,23 @@ import SimilarMovies from "./similarMovies";
 import MovieCard from "./movieCard";
 
 export default function MovieDetail({ movie }) {
-  const { id, genres } = movie;
+  const { genres } = movie;
   const genre = genres[0] || null;
 
   return (
     <div className={styles.container}>
-      <div className={styles.nonscrollable}>
-        <Link href="/">
-          <div className={styles.button}>
-            <Image
-              src={"/static/images/chevron-back.png"}
-              alt="back icon"
-              width={16}
-              height={16}
-            />
-            <p className={styles.buttonText}>BACK TO MOVIES</p>
-          </div>
-        </Link>
-        <MovieCard movie={movie} />
-      </div>
+      <Link href="/">
+        <div className={styles.button}>
+          <Image
+            src={"/static/images/chevron-back.png"}
+            alt="back icon"
+            width={16}
+            height={16}
+          />
+          <p className={styles.buttonText}>BACK TO MOVIES</p>
+        </div>
+      </Link>
+      <MovieCard movie={movie} />
       <SimilarMovies genre={genre} />
     </div>
   );

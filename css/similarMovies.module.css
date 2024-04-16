@@ -13,14 +13,6 @@
   gap: var(--spacing-4);
 }
 
-.thing {
-  width: 100vw;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow: hidden;
-  display: flex;
-  gap: var(--spacing-4);
-}
-
 .container p {
   font-size: 18px;
   font-weight: 600;
@@ -35,4 +27,9 @@
   box-shadow: 0px 0px 12px 0px #00000099;
   border: 1px solid;
   border-color: var(--night-40);
+}
+
+.container h2 {
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-2);
 }

@@ -3,8 +3,7 @@ import ScoreItem from "./scoreItem";
 import styles from "@/css/movieCard.module.css";
 
 export default function MetaContent({ movie }) {
-  const { vote_average, rating, release_date, release_dates, runtime, genres } =
-    movie;
+  const { vote_average, release_date, release_dates, runtime, genres } = movie;
 
   const releaseYear = new Date(release_date).getFullYear();
 

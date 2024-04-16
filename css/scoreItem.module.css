@@ -1,0 +1,19 @@
+.ratingLarge {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+}
+
+.ratingValue {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
