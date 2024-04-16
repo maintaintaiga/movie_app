@@ -34,7 +34,7 @@ npm run build
 ```
 
 - Utilise pm2 to control running of the app
-  see pm2.config.js in project
+  `see pm2.config.js in project`
 
 ```bash
     pm2 start <location>/pm2.config.js
