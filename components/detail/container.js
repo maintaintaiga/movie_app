@@ -2,11 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../css/movieDetail.module.css";
-import SimilarMovies from "./similarMovies";
-import MovieCard from "./movieCard";
+import styles from "@/css/movieDetail.module.css";
+import SimilarMovies from "./similar";
+import MovieInfo from "./info";
 
-export default function MovieDetail({ movie }) {
+export default function Container({ movie }) {
   const { genres } = movie;
   const genre = genres[0] || null;
 
@@ -23,7 +23,7 @@ export default function MovieDetail({ movie }) {
           <p className={styles.buttonText}>BACK TO MOVIES</p>
         </div>
       </Link>
-      <MovieCard movie={movie} />
+      <MovieInfo movie={movie} />
       <SimilarMovies genre={genre} />
     </div>
   );

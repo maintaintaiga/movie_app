@@ -1,11 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
-import styles from "../css/similarMovies.module.css";
+import styles from "@/css/similarMovies.module.css";
 import { getSimilarMovies } from "@/app/data/data";
 import tmdbLoader from "@/app/tmdb-image-loader";
-import Image from "next/image";
-import ScoreItem from "./scoreItem";
+import ScoreItem from "../scoreItem";
 
 export default function SimilarMovies({ id, genre }) {
   const [movies, setMovies] = useState([]);

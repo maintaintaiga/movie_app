@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import styles from "../css/page.module.css";
+
+import styles from "@/css/page.module.css";
 import { getMovies } from "@/app/data/data";
-import MovieItem from "@/components/movieItem";
+import MovieItem from "@/components/home/item";
 
 export default function Page() {
   const [movies, setMovies] = useState(null);

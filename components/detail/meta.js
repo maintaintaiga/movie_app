@@ -1,5 +1,5 @@
 "use client";
-import ScoreItem from "./scoreItem";
+import ScoreItem from "../scoreItem";
 import styles from "@/css/movieCard.module.css";
 
 export default function MetaContent({ movie }) {

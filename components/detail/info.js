@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import tmdbLoader from "@/app/tmdb-image-loader";
 import styles from "@/css/movieCard.module.css";
-import MetaContent from "./metaContent";
+import MetaContent from "./meta";
 
-export default function MovieCard({ movie }) {
+export default function Info({ movie }) {
   const { title, overview, poster_path, credits } = movie;
 
   const crewItem = (member) => (

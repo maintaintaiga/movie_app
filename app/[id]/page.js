@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-import MovieDetail from "@/components/movieDetail";
+import DetailContainer from "@/components/detail/container";
 import styles from "@/css/detailPage.module.css";
 import { getMovie } from "@/app/data/data";
 
@@ -25,7 +25,7 @@ export default function Page({ params }) {
 
   return movie != null ? (
     <main className={styles.container}>
-      <MovieDetail movie={movie} />
+      <DetailContainer movie={movie} />
     </main>
   ) : null;
 }

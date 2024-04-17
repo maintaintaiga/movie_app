@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-
-import styles from "../css/appbar.module.css";
 import Link from "next/link";
+
+import styles from "@/css/appbar.module.css";
 
 export default function Appbar() {
   return (

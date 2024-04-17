@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import tmdbLoader from "../app/tmdb-image-loader";
 
-import styles from "../css/movieItem.module.css";
-import ScoreItem from "./scoreItem";
+import tmdbLoader from "@/app/tmdb-image-loader";
+import styles from "@/css/movieItem.module.css";
+import ScoreItem from "../scoreItem";
 
 export default function MovieItem({ movie, imageWidth, imageHeight }) {
   const { id, title, poster_path, vote_average } = movie;
