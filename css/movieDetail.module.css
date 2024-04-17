@@ -37,6 +37,10 @@
   font-weight: 700;
 }
 
+.buttonText:hover {
+  opacity: var(--hover-opacity);
+}
+
 p .movieDetail {
   color: #fff;
 }

@@ -15,6 +15,7 @@ export default function MovieCard({ movie }) {
     </div>
   );
 
+  //To note: not sure on specific crew requirements here, so just limiting to 3 members.
   const crewArr = credits.crew
     .filter((el) => el.job === "Writer" || el.job === "Director")
     .slice(0, 3)

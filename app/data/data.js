@@ -8,6 +8,7 @@ export async function getMovies() {
 }
 
 export async function getSimilarMovies(genreId) {
+  //To note: could also use /movie/:id/similar, but which genre to choose?
   const apiUrl = process.env.NEXT_PUBLIC_TMDB_API_URL || "";
   const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY || "";
   const res = await fetch(

@@ -3,3 +3,14 @@
   background-color: var(--night-50);
   overflow: hidden;
 }
+
+/* Track */
+.container ::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Handle */
+.container ::-webkit-scrollbar-thumb {
+  background-color: var(--night-50); /* Color of the scrollbar handle */
+  border-radius: 6px; /* Border radius of the scrollbar handle */
+}
