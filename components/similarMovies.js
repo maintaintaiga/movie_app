@@ -21,7 +21,7 @@ export default function SimilarMovies({ id, genre }) {
         setMovies([]);
       }
     }
-  }, [id]);
+  }, [id, genre]);
 
   return (
     <div className={styles.container}>
@@ -29,7 +29,7 @@ export default function SimilarMovies({ id, genre }) {
       <div className={styles.scrollContainer}>
         {movies != null && movies.length > 0
           ? movies.map((movie) => (
-              <div style={{ minWidth: 180 }}>
+              <div key={movie.id} style={{ minWidth: 180 }}>
                 <Image
                   key={movie.id}
                   src={movie.poster_path}

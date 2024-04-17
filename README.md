@@ -1,5 +1,10 @@
 # Movie App Project
 
+## Required Environment Vars
+
+- NEXT_PUBLIC_TMDB_API_URL: <path to the tmdb api>
+- NEXT_PUBLIC_TMDB_API_KEY: <api key created via tmdb>
+
 ## To run on development
 
 ```bash
