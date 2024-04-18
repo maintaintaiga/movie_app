@@ -32,6 +32,7 @@ export default function Info({ movie }) {
           loader={tmdbLoader}
           className={styles.image}
           sizes={`(max-width: 900px) 300px, (min-width: 900px) 400px`}
+          quality={100}
         />
       </div>
       <div className={styles.content}>
